@@ -1,0 +1,14 @@
+body {
+	font-family: sans-serif;
+	min-width: 200px;
+	padding: 10px;
+}
+
+#result {
+	font-weight: bold;
+	margin-top: 8px;
+
+	&:empty {
+		margin-top: 0;
+	}
+}
