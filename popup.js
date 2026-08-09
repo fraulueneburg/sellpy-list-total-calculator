@@ -10,6 +10,7 @@ document.getElementById('calc').addEventListener('click', async () => {
 				.filter((n) => !isNaN(n))
 
 			const sum = listItems.reduce((acc, curr) => acc + curr, 0)
+
 			return {
 				sumFormatted: sum.toLocaleString(undefined, { style: 'currency', currency: 'EUR' }),
 				count: listItems.length,
@@ -17,5 +18,5 @@ document.getElementById('calc').addEventListener('click', async () => {
 		},
 	})
 
-	document.getElementById('result').textContent = `Sum: ${result.sumFormatted} (${result.count} items)`
+	document.getElementById('result').textContent = `Sum: ${result.sumFormatted} (${result.count} items on this page)`
 })
